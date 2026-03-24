@@ -2,9 +2,9 @@ package com.proctorly.assessment.entity;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
-import com.proctorly.assessment.entity.ENUM.Difficulty;
-import com.proctorly.assessment.entity.ENUM.QuestionStatus;
-import com.proctorly.assessment.entity.ENUM.QuestionType;
+import com.proctorly.assessment.enums.Difficulty;
+import com.proctorly.assessment.enums.QuestionStatus;
+import com.proctorly.assessment.enums.QuestionType;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;

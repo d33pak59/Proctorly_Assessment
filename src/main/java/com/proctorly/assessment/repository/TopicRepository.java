@@ -3,5 +3,8 @@ package com.proctorly.assessment.repository;
 import com.proctorly.assessment.entity.Topic;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 public interface TopicRepository extends JpaRepository<Topic, Integer> {
+    List<Topic> findByDomainId(Long domainId);
 }

@@ -1,4 +1,4 @@
-package com.proctorly.assessment.entity.ENUM;
+package com.proctorly.assessment.enums;
 
 public enum QuestionType {
     MCQ_SINGLE,

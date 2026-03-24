@@ -1,5 +1,8 @@
 package com.proctorly.assessment.dto;
+
+
 import lombok.Data;
+
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
@@ -8,14 +11,29 @@ import java.util.UUID;
 public class QuestionResponse {
     private UUID id;
     private UUID tenantId;
-    private Long topicId;
     private String type;
     private String difficulty;
     private Integer creditCost;
-    private Object contentJson;
-    private Integer version;
     private String status;
+    private Integer version;
+    private Object contentJson;
+    private List<String> tags;
     private String createdBy;
     private LocalDateTime createdAt;
-    private List<String> tags;
+    private LocalDateTime updatedAt;
+    private DomainInfo domain;
+    private TopicInfo topic;
+
+    @Data
+    public static class DomainInfo {
+        private Long id;
+        private String name;
+    }
+
+    @Data
+    public static class TopicInfo {
+        private Long id;
+        private String name;
+        private String parentTopicName;
+    }
 }

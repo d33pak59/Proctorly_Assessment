@@ -1,6 +1,7 @@
 package com.proctorly.assessment.dto;
 
 import lombok.Data;
+
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -21,7 +22,7 @@ public class CodingQuestionRequest {
         private String constraints;
         private String sampleInput;
         private String sampleOutput;
-        private Map<String, String> starterCode; // key = language, value = code
+        private Map<String, String> starterCode;
         private List<String> supportedLanguages;
         private List<TestCase> testCases;
         private String explanation;
